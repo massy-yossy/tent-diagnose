@@ -1,13 +1,21 @@
 import { useAnswer } from "../../hooks/useAnswer"
+import { AnswerTentData } from "../../tentData/AnswerTentDate";
+import { TentDataKey } from "../../types/TentDataKey";
+
 
 
 const AnswerPage = () => {
 
-  const {answer} = useAnswer()
+  const { answer } = useAnswer();
 
-  console.log(answer)
+  const key = answer.join('') as TentDataKey;
+
+  const AnswerPageCompontent = AnswerTentData[key];
+
   return (
-    <div>Answer</div>
+    <div>
+      <AnswerPageCompontent/>
+    </div>
   )
 }
 
