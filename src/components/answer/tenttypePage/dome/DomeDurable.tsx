@@ -1,9 +1,11 @@
-
+import AnswerPageLayout from "../../AnswerPageLayout";
 
 const DomeDurable = () => {
   return (
-    <div>DomeDurable</div>
-  )
-}
+    <div>
+      <AnswerPageLayout title={"こんにちは"} name={"ワンポールテントです"} />
+    </div>
+  );
+};
 
-export default DomeDurable
+export default DomeDurable;

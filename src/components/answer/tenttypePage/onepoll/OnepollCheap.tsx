@@ -1,7 +1,10 @@
+import AnswerPageLayout from "../../AnswerPageLayout"
 
 const OnepollCheap = () => {
   return (
-    <div>OnepollCheap</div>
+    <div>
+      <AnswerPageLayout title={<div>こんにちは</div>} name={"ワンポールテントです"} />
+    </div>
   )
 }
 

@@ -1,11 +1,20 @@
+import {FC, memo, ReactNode} from "react"
 
 
-const AnswerPage = () => {
-
-  return (
-    <div>
-    </div>
-  )
+type Props = {
+  title: string | ReactNode,
+  name: string
 }
 
-export default AnswerPage
+const AnswerPageLayout:FC<Props> = memo((props) => {
+  const { title, name } = props;
+
+  return (
+    <>
+      <div>{title}</div>
+      <div>{name}</div>
+    </>
+  );
+});
+
+export default AnswerPageLayout;

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { useAnswer } from "./useAnswer";
 import { TentDataKey } from "../types/TentDataKey";
-import { AnswerTentData } from "../tentData/AnswerTentDate";
+import { AnswerDataUrl } from "../tentData/AnswerDataUrl";
 
 export const useAnswerpageTransition = () =>{
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ export const useAnswerpageTransition = () =>{
 
   const key = answer.join('') as TentDataKey;
 
-  const answerPageUrl = AnswerTentData[key];
+  const answerPageUrl = AnswerDataUrl[key];
 
   navigate(answerPageUrl)
   }

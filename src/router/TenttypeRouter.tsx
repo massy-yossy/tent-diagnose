@@ -12,6 +12,7 @@ import TworoomGood3over from "../components/answer/tenttypePage/tworoom/TworoomG
 import TworoomLodgeFamily from "../components/answer/tenttypePage/tworoom/TworoomLodgeFamily";
 
 export const TenttypeRouter = [
+  //1人用
   {
     path: "/tenttype_01",
     compornent: <OnepollCheap />
@@ -32,22 +33,24 @@ export const TenttypeRouter = [
     path: "/tenttype_05",
     compornent: <OnepollDome />
   },
+  //グループ用
   {
-    path: "/tenttype_10",
+    path: "/tenttype_11",
     compornent: <OnepollCheap3over />
   },
   {
-    path: "/tenttype_11",
+    path: "/tenttype_12",
     compornent: <TworoomGood3over />
   },
   {
-    path: "/tenttype_12",
+    path: "/tenttype_13",
     compornent: <OnepollShelter3over />
   },
   {
-    path: "/tenttype_13",
+    path: "/tenttype_14",
     compornent: <OnepollDome3over />
   },
+  //ファミリー用
   {
     path: "/tenttype_21",
     compornent: <OnepollFamily />

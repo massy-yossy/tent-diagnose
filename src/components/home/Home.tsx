@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+
 import { memo, FC, useState, useEffect } from "react";
 
 import Footer from "../footer/Footer";
