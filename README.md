@@ -25,15 +25,12 @@ If you are developing a production application, we recommend updating the config
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-<br>
-<br>
-<br>
+
 # テントタイプ診断の簡単な仕様
-<br>
-<br>
+
 ## URLの設定
 - スタートページ、診断ページはホームディレクトリ　"/"
-- 診断結果（アンサーページ）はそれぞれテントの種類に合わせたURLを付与<br>
+- 診断結果（アンサーページ）はそれぞれテントの種類に合わせたURLを付与  
 　(例："./tenttype_01"→ワンポール×安い、"./tenttype_02"→ドーム×耐久性...)
 
 ## ファイル概要
