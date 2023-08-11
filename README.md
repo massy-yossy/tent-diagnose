@@ -28,12 +28,12 @@ If you are developing a production application, we recommend updating the config
 
 # テントタイプ診断の簡単な仕様
 
-## URLの設定
+### URLの設定
 - スタートページ、診断ページはホームディレクトリ　"/"
 - 診断結果（アンサーページ）はそれぞれテントの種類に合わせたURLを付与  
 　(例："./tenttype_01"→ワンポール×安い、"./tenttype_02"→ドーム×耐久性...)
 
-## ファイル概要
+### ファイル概要
 - URLとコンポーネントの紐づけ
 ./router/TenttypeRouter.ts
 
