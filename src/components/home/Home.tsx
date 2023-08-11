@@ -1,13 +1,20 @@
-import { memo, FC, useState } from "react";
+import { memo, FC, useState, useEffect } from "react";
 
 import Footer from "../footer/Footer";
 import TestPage from "../testpage/TestPage";
+import { useAnswer } from "../../hooks/useAnswer";
 
 const Home: FC = memo(() => {
   // ホームページ用
   const [homePage, setHomePage] = useState(true);
   // 診断ページ用
   const [testPage, settestPage] = useState(false);
+
+  const { setAnswer } = useAnswer();
+
+  useEffect(() => {
+    setAnswer([])
+  }, [])
 
   const onClickStart = () => {
     setHomePage(false);

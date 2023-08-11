@@ -1,14 +1,22 @@
-import { FC, memo } from "react";
+import { FC, memo, useEffect } from "react";
 
 import Footer from "../footer/Footer";
 import { useAnswer } from "../../hooks/useAnswer";
 import { useAnswerAddArray } from "../../hooks/useAnswerAddArray";
-import AnswerPage from "../answer/AnswerPage";
+import { useAnswerpageTransition } from "../../hooks/useAnswerpageTransition";
 
 const TestPage: FC = memo(() => {
   const { answer } = useAnswer();
 
   const { onClickAddAnswerType } = useAnswerAddArray();
+
+  const { answerpageTransition } = useAnswerpageTransition()
+
+  useEffect(() => {
+    if(answer.length === 3){
+      answerpageTransition()
+    }
+  },[answer])
 
   return (
     <main>
@@ -45,7 +53,6 @@ const TestPage: FC = memo(() => {
           </div>
         </div>
       )}
-      {answer.length === 3 && <AnswerPage />}
       <Footer />
     </main>
   );

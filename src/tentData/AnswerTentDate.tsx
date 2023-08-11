@@ -1,9 +1,7 @@
-import DomeDurable from "../components/answer/tentDataPage/dome/DomeDurable";
-import OnepollCheap from "../components/answer/tentDataPage/onepoll/OnepollCheap";
-import { TentDataKey } from "../types/TentDataKey";
 
 
-export const AnswerTentData: Record<TentDataKey, React.FC> = {
-  aaa: OnepollCheap,
-  aab: DomeDurable,
+export const AnswerTentData: {[key: string]: string} = {
+  aaa: "/tenttype_01",
+  aab: "/tenttype_02",
+  aac: "/tenttype_03",
 }
