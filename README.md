@@ -28,7 +28,7 @@ If you are developing a production application, we recommend updating the config
 
 
 
-#　テントタイプ診断の簡単な仕様
+# テントタイプ診断の簡単な仕様
 
 ## URLの設定
 - スタートページ、診断ページはホームディレクトリ　"/"
