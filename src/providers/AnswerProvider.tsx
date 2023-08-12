@@ -1,6 +1,7 @@
 import { createContext, FC, Dispatch, SetStateAction, ReactNode, useState} from "react";
 
-export type AnswerContextType = {
+
+type AnswerContextType = {
   answer: string[];
   setAnswer: Dispatch<SetStateAction<string[]>>
 }

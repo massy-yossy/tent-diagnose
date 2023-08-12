@@ -1,18 +1,18 @@
-import {FC, memo, ReactNode} from "react"
+import {FC, memo,} from "react"
+import { answerpageType } from "../../../types/answerpageType";
 
 
-type Props = {
-  title: string | ReactNode,
-  name: string
-}
+const AnswerPageLayout:FC<answerpageType> = memo((props) => {
 
-const AnswerPageLayout:FC<Props> = memo((props) => {
-  const { title, name } = props;
+  const {tentname, image, features, goodPoint, importantPoint} = props;
 
   return (
     <>
-      <div>{title}</div>
-      <div>{name}</div>
+      <div>{tentname}</div>
+      <img src={image} alt="テントの画像" />
+      <div>{features}</div>
+      <div>{goodPoint}</div>
+      <div>{importantPoint}</div>
     </>
   );
 });

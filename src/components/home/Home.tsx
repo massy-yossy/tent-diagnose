@@ -19,30 +19,32 @@ const Home: FC = memo(() => {
   }, []);
 
   const onClickStart = () => {
-    setHomePage(false);
-    settestPage(true);
+    setHomePage(!homePage);
+    settestPage(!testPage);
   };
 
   return (
     <>
       {homePage && (
-        <main>
-          <div>
-            <h1>
-              おすすめの<br></br>テントタイプ診断
-            </h1>
-            <p>TENT TYPE TEST.</p>
-            <p>キャンプはテント選びがとても重要です</p>
-            <p>事前に自分に合ったテントを診断しましょう。</p>
+        <>
+          <main>
             <div>
-              <p>
-                30秒で<br></br>診断！
-              </p>
-              <button onClick={onClickStart}>診断スタート</button>
+              <h1>
+                おすすめの<br></br>テントタイプ診断
+              </h1>
+              <p>TENT TYPE TEST.</p>
+              <p>キャンプはテント選びがとても重要です</p>
+              <p>事前に自分に合ったテントを診断しましょう。</p>
+              <div>
+                <p>
+                  30秒で<br></br>診断！
+                </p>
+                <button onClick={onClickStart}>診断スタート</button>
+              </div>
             </div>
-          </div>
+          </main>
           <Footer />
-        </main>
+        </>
       )}
       {testPage && <TestPage />}
     </>
