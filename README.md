@@ -26,16 +26,28 @@ If you are developing a production application, we recommend updating the config
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
+# テントタイプ診断の簡単な仕様
 
+### 環境構築・技術選定
+#### 環境構築
+- vite
+#### 技術選定
+- react
+- typescript
+- css　→　emotion
 
-#　テントタイプ診断の簡単な仕様
+### ページ構成
+- スタートページ
+- 診断ページ　＜質問３問＞
+- 診断結果ページ（アンサーページ）
 
-## URLの設定
-- スタートページ、診断ページはホームディレクトリ　"/"
-- 診断結果（アンサーページ）はそれぞれテントの種類に合わせたURLを付与
-(例："./tenttype_01"→ワンポール×安い、"./tenttype_02"→ドーム×耐久性...)
+### URLの設定
+- スタートページ　→　"/" ホームディレクトリ
+- 診断ページ　→　"/"　ホームディレクトリ
+- アンサーページ　→　それぞれテントの種類に合わせたURLを付与  
+　(例："./tenttype_01"→ワンポール×安い、"./tenttype_02"→ドーム×耐久性...)
 
-## ファイル概要
+### ファイル概要
 - URLとコンポーネントの紐づけ
 ./router/TenttypeRouter.ts
 
@@ -57,7 +69,28 @@ If you are developing a production application, we recommend updating the config
   },
 ```
 
-- アンサーページの型を指定
-./types/answerPageType.ts
+### 共通ポイント
+- 診断ページ
 
+```js
+type tentpageType = {
+  title: ReactNode; //診断内容
+  subtitle: ReactNode; //診断の英語
+  question1: ReactNode; //質問１
+  question2: ReactNode; //質問２
+  question3: ReactNode; //質問３
+}
+```
 
+- アンサーページ
+
+```js
+type answerpageType = {
+  tentname: ReactNode; //テントの名前
+  image: string; //テントの画像パス
+  features: ReactNode; //テントの特徴
+  goodPoint: ReactNode; //テントの良いところ
+  importantPoint: ReactNode; //テントの注意点
+}
+   
+```
