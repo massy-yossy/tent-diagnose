@@ -58,4 +58,28 @@ If you are developing a production application, we recommend updating the config
 - アンサーページの型を指定
 ./types/answerPageType.ts
 
+### 共通ポイント
+- 診断ページ
 
+```js
+type tentpageType = {
+  title: ReactNode; //診断内容
+  subtitle: ReactNode; //診断の英語
+  question1: ReactNode; //質問１
+  question2: ReactNode; //質問２
+  question3: ReactNode; //２
+}
+```
+
+- アンサーページ
+
+```js
+type answerpageType = {
+  tentname: ReactNode; //テントの名前
+  image: string; //テントの画像パス
+  features: ReactNode; //テントの特徴
+  goodPoint: ReactNode; //テントの良いところ
+  importantPoint: ReactNode; //テントの注意点
+}
+   
+```
