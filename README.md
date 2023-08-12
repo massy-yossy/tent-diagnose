@@ -65,7 +65,7 @@ type tentpageType = {
   subtitle: ReactNode; //診断の英語
   question1: ReactNode; //質問１
   question2: ReactNode; //質問２
-  question3: ReactNode; //２
+  question3: ReactNode; //質問３
 }
 ```
 
