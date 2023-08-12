@@ -1,16 +1,22 @@
-import {FC, memo, ReactNode} from 'react'
+import {FC, memo, ReactNode} from 'react';
+
+import { css } from "@emotion/react"
 
 type Props = {
   onClick: () => void;
   children: ReactNode;
 }
 
+const buttonStyle = css`
+
+`
+
 const TestpageButton: FC<Props> = memo((props) => {
 
   const { onClick, children } = props;
 
   return (
-    <button onClick={onClick}>{children}</button>
+    <button css={buttonStyle} onClick={onClick}>{children}</button>
   )
 })
 
