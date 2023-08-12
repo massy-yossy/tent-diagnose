@@ -1,15 +1,15 @@
-import DomeDurable from "../components/answer/tenttypePage/dome/DomeDurable";
-import DomeStylish from "../components/answer/tenttypePage/dome/DomeStylish";
-import OnepollCheap from "../components/answer/tenttypePage/onepoll/OnepollCheap";
-import OnepollCheap3over from "../components/answer/tenttypePage/onepoll/OnepollCheap3over";
-import OnepollDome from "../components/answer/tenttypePage/onepoll/OnepollDome";
-import OnepollDome3over from "../components/answer/tenttypePage/onepoll/OnepollDome3over";
-import OnepollFamily from "../components/answer/tenttypePage/onepoll/OnepollFamily";
-import OnepollShelter from "../components/answer/tenttypePage/onepoll/OnepollShelter";
-import OnepollShelter3over from "../components/answer/tenttypePage/onepoll/OnepollShelter3over";
-import TunnelFamily from "../components/answer/tenttypePage/tunnel/TunnelFamily";
-import TworoomGood3over from "../components/answer/tenttypePage/tworoom/TworoomGood3over";
-import TworoomLodgeFamily from "../components/answer/tenttypePage/tworoom/TworoomLodgeFamily";
+import DomeDurable from "../components/answer/pages/dome/DomeDurable";
+import DomeStylish from "../components/answer/pages/dome/DomeStylish";
+import OnepollCheap from "../components/answer/pages/onepoll/OnepollCheap";
+import OnepollCheap3over from "../components/answer/pages/onepoll/OnepollCheap3over";
+import OnepollDome from "../components/answer/pages/onepoll/OnepollDome";
+import OnepollDome3over from "../components/answer/pages/onepoll/OnepollDome3over";
+import OnepollFamily from "../components/answer/pages/onepoll/OnepollFamily";
+import OnepollShelter from "../components/answer/pages/onepoll/OnepollShelter";
+import OnepollShelter3over from "../components/answer/pages/onepoll/OnepollShelter3over";
+import TunnelFamily from "../components/answer/pages/tunnel/TunnelFamily";
+import TworoomGood3over from "../components/answer/pages/tworoom/TworoomGood3over";
+import TworoomLodgeFamily from "../components/answer/pages/tworoom/TworoomLodgeFamily";
 
 export const TenttypeRouter = [
   //1人用

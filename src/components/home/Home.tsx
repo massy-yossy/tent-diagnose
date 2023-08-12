@@ -3,7 +3,7 @@
 import { memo, FC, useState, useEffect } from "react";
 
 import Footer from "../footer/Footer";
-import TestPage from "../testpage/TestPage";
+import TestPage from "../testpage/pages/TestPage";
 import { useAnswer } from "../../hooks/useAnswer";
 
 const Home: FC = memo(() => {
@@ -15,8 +15,8 @@ const Home: FC = memo(() => {
   const { setAnswer } = useAnswer();
 
   useEffect(() => {
-    setAnswer([])
-  }, [])
+    setAnswer([]);
+  }, []);
 
   const onClickStart = () => {
     setHomePage(false);

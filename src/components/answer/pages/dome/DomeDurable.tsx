@@ -1,4 +1,4 @@
-import AnswerPageLayout from "../../AnswerPageLayout";
+import AnswerPageLayout from "../../layout/AnswerPageLayout";
 
 const DomeDurable = () => {
   return (
