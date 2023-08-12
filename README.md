@@ -28,6 +28,14 @@ If you are developing a production application, we recommend updating the config
 
 # テントタイプ診断の簡単な仕様
 
+### 環境構築・技術選定
+#### 環境構築
+- vite
+#### 技術選定
+- react
+- typescript
+- css　→　emotion
+
 ### URLの設定
 - スタートページ　→　"/" ホームディレクトリ
 - 診断ページ　→　"/"　ホームディレクトリ
