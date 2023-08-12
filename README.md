@@ -56,9 +56,6 @@ If you are developing a production application, we recommend updating the config
   },
 ```
 
-- アンサーページの型を指定
-./types/answerPageType.ts
-
 ### 共通ポイント
 - 診断ページ
 
