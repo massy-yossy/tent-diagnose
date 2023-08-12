@@ -36,6 +36,11 @@ If you are developing a production application, we recommend updating the config
 - typescript
 - css　→　emotion
 
+### ページ構成
+- スタートページ
+- 診断ページ　＜質問３問＞
+- 診断結果ページ（アンサーページ）
+
 ### URLの設定
 - スタートページ　→　"/" ホームディレクトリ
 - 診断ページ　→　"/"　ホームディレクトリ
