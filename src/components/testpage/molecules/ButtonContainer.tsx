@@ -5,8 +5,7 @@ import { tentpageType } from "../../../types/tentpageType";
 import { css } from "@emotion/react";
 
 const ButtonContainer: FC<tentpageType> = memo((props) => {
-
-  const { question1, question2, question3, buttonSize} = props
+  const { question1, question2, question3, buttonSize } = props;
 
   const { onClickAddAnswerType } = useAnswerAddArray();
 
@@ -34,11 +33,17 @@ const ButtonContainer: FC<tentpageType> = memo((props) => {
   );
 });
 
+const media600 = `
+@media screen and (max-width: 600px)
+`;
 const buttonContainer = css`
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 34px;
+  ${media600} {
+    gap: 15px;
+  }
 `;
 
 export default ButtonContainer;

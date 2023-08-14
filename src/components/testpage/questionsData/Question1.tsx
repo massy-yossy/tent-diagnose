@@ -1,4 +1,4 @@
-import {FC, memo} from "react"
+import { FC, memo } from "react";
 import { css } from "@emotion/react";
 import TestpageLayout from "../layout/TestpageLayout";
 
@@ -15,9 +15,16 @@ const Question1: FC = memo(() => {
   );
 });
 
+const media600 = `
+@media screen and (max-width: 600px)
+`;
 const buttonSize = css`
-width: 311px;
-height: 59px;
-`
+  width: 311px;
+  height: 59px;
+  ${media600} {
+    width: 238px;
+    height: 48px;
+  }
+`;
 
 export default Question1;
