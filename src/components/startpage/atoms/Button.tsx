@@ -6,6 +6,16 @@ type Props = {
   children: string;
 };
 
+const Button: FC<Props> = memo((props) => {
+  const { onClickStart, children } = props;
+
+  return (
+    <button css={button} onClick={onClickStart}>
+      {children}
+    </button>
+  );
+});
+
 const media1600 = `
 @media screen and (max-width: 1600px)
 `;
@@ -39,15 +49,4 @@ const button = css`
   }
 
 `;
-
-const Button: FC<Props> = memo((props) => {
-  const { onClickStart, children } = props;
-
-  return (
-    <button css={button} onClick={onClickStart}>
-      {children}
-    </button>
-  );
-});
-
 export default Button;

@@ -2,6 +2,24 @@ import { FC, memo } from "react";
 
 import { css } from "@emotion/react";
 
+type Props = {
+  className?: string;
+};
+
+const Footer: FC<Props> = memo(({ className }) => {
+  return (
+    <footer className={className} css={footer}>
+      <p css={text}>企画・診断制作：株式会社OUTRIP</p>
+      <a css={link} href="">
+        ＜＜ お問い合わせ ＞＞
+      </a>
+      <p css={copy}>
+        <small>&copy;2023 mypace outdoor.All Rights Reserved</small>
+      </p>
+    </footer>
+  );
+});
+
 const media1600 = `
 @media screen and (max-width: 1600px)
 `;
@@ -52,23 +70,4 @@ const copy = css`
     font-size: 10px;
   }
 `
-
-type Props = {
-  className?: string;
-};
-
-const Footer: FC<Props> = memo(({ className }) => {
-  return (
-    <footer className={className} css={footer}>
-      <p css={text}>企画・診断制作：株式会社OUTRIP</p>
-      <a css={link} href="">
-        ＜＜ お問い合わせ ＞＞
-      </a>
-      <p css={copy}>
-        <small>&copy;2023 mypace outdoor.All Rights Reserved</small>
-      </p>
-    </footer>
-  );
-});
-
 export default Footer;

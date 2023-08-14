@@ -6,6 +6,19 @@ type Props = {
   onClickStart: () => void;
 };
 
+const StartButton: FC<Props> = memo((props) => {
+  const { onClickStart } = props;
+
+  return (
+    <div css={buttonContainer}>
+      <span>
+        30秒で<br></br>診断！
+      </span>
+      <Button onClickStart={onClickStart}>診断スタート</Button>
+    </div>
+  );
+});
+
 const media600 = `
 @media screen and (max-width: 600px)
 `;
@@ -66,18 +79,4 @@ const buttonContainer = css`
     }
   }
 `;
-
-const StartButton: FC<Props> = memo((props) => {
-  const { onClickStart } = props;
-
-  return (
-    <div css={buttonContainer}>
-      <span>
-        30秒で<br></br>診断！
-      </span>
-      <Button onClickStart={onClickStart}>診断スタート</Button>
-    </div>
-  );
-});
-
 export default StartButton;
