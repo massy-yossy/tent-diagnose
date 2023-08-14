@@ -1,10 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-
 import { memo, FC, useState, useEffect } from "react";
 
-import Footer from "../footer/Footer";
 import TestPage from "../testpage/pages/TestPage";
 import { useAnswer } from "../../hooks/useAnswer";
+import Startpage from "../startpage/Startpage";
 
 const Home: FC = memo(() => {
   // ホームページ用
@@ -18,33 +17,15 @@ const Home: FC = memo(() => {
     setAnswer([]);
   }, []);
 
-  const onClickStart = () => {
-    setHomePage(!homePage);
-    settestPage(!testPage);
-  };
-
   return (
     <>
       {homePage && (
-        <>
-          <main>
-            <div>
-              <h1>
-                おすすめの<br></br>テントタイプ診断
-              </h1>
-              <p>TENT TYPE TEST.</p>
-              <p>キャンプはテント選びがとても重要です</p>
-              <p>事前に自分に合ったテントを診断しましょう。</p>
-              <div>
-                <p>
-                  30秒で<br></br>診断！
-                </p>
-                <button onClick={onClickStart}>診断スタート</button>
-              </div>
-            </div>
-          </main>
-          <Footer />
-        </>
+        <Startpage
+          homePage={homePage}
+          setHomePage={setHomePage}
+          testPage={testPage}
+          settestPage={settestPage}
+        />
       )}
       {testPage && <TestPage />}
     </>
