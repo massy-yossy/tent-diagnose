@@ -19,11 +19,22 @@ const TestpageButton: FC<Props> = memo((props) => {
   );
 });
 
+
+const media600 = `
+@media screen and (max-width: 600px)
+`;
+
 const buttonStyle = css`
   background: linear-gradient(90deg, #60b84a, #2f4e2c);
   color: #fff;
   border-radius: 30px;
   display: block;
+  cursor: pointer;
+  font-size: 18px;
+  ${media600}
+  {
+    font-size: 15px;
+  }
 `;
 
 export default TestpageButton;

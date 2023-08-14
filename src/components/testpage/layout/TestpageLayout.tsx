@@ -26,10 +26,15 @@ const TestpageLayout: FC<tentpageType> = memo((props) => {
           />
         </div>
       </main>
-      <Footer css={footer}/>
+      <Footer css={footer} />
     </SideTentLayout>
   );
 });
+
+const media600 = `
+@media screen and (max-width: 600px)
+`;
+
 // メイン
 const main = css`
   height: 100svh;
@@ -45,12 +50,23 @@ const titleStyle = css`
   line-height: calc(40 / 30);
   font-weight: normal;
   margin-bottom: 18px;
-`
+  ${media600} {
+    font-size: 24px;
+    line-height: calc(32 / 24);
+    margin-bottom: 13px;
+  }
+`;
 const subtitleStyle = css`
-font-size: 20px;
-margin-bottom: 88px;
-line-height: calc(27 / 20);
-`
+  font-size: 20px;
+  margin-bottom: 88px;
+  line-height: calc(27 / 20);
+  ${media600}
+  {
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    margin-bottom: 66px;
+  }
+`;
 //footer
 const footer = css`
   width: 100%;
