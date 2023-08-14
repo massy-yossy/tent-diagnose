@@ -1,8 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-
 import { FC, memo, useEffect } from "react";
 
-import Footer from "../../footer/Footer";
 import { useAnswer } from "../../../hooks/useAnswer";
 import { useAnswerpageTransition } from "../../../hooks/useAnswerpageTransition";
 import Question1 from "../questions/Question1";
@@ -27,7 +25,6 @@ const TestPage: FC = memo(() => {
         {answer.length === 1 && <Question2 />}
         {answer.length === 2 && <Question3 />}
       </main>
-      <Footer />
     </>
   );
 });
