@@ -1,24 +1,29 @@
-import {FC, memo, ReactNode} from 'react';
+import { FC, memo, ReactNode } from "react";
 
-import { css } from "@emotion/react"
+import { css, SerializedStyles } from "@emotion/react";
 
 type Props = {
   onClick: () => void;
   children: ReactNode;
-  className? : string;
-}
-
-const buttonStyle = css`
-
-`
+  className?: string;
+  buttonSize: SerializedStyles
+};
 
 const TestpageButton: FC<Props> = memo((props) => {
-
-  const { onClick, children, className } = props;
+  const { onClick, children, buttonSize } = props;
 
   return (
-    <button className={className} css={buttonStyle} onClick={onClick}>{children}</button>
-  )
-})
+    <button css={[buttonStyle, buttonSize]} onClick={onClick}>
+      {children}
+    </button>
+  );
+});
 
-export default TestpageButton
+const buttonStyle = css`
+  background: linear-gradient(90deg, #60b84a, #2f4e2c);
+  color: #fff;
+  border-radius: 30px;
+  display: block;
+`;
+
+export default TestpageButton;

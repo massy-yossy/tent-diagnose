@@ -6,6 +6,23 @@ type Props = {
   children: ReactNode;
 };
 
+const SideTentLayout: FC<Props> = memo(({ children }) => {
+  return (
+    <div css={container}>
+      <div css={wrapper}>
+        <div css={leftimg}>
+          <img src="./images/tent2.webp" alt="テントイラスト" />
+        </div>
+        <div css={rightimg}>
+          <img src="./images/tent1.webp" alt="テントイラスト" />
+        </div>
+        <Logo />
+        {children}
+      </div>
+    </div>
+  );
+});
+
 const media990 = `
 @media screen and (max-width: 990px)
 `;
@@ -39,21 +56,4 @@ const rightimg = css`
     display: none;
   }
 `;
-const SideTentLayout: FC<Props> = memo(({ children }) => {
-  return (
-    <div css={container}>
-      <div css={wrapper}>
-        <div css={leftimg}>
-          <img src="./images/tent2.webp" alt="テントイラスト" />
-        </div>
-        <div css={rightimg}>
-          <img src="./images/tent1.webp" alt="テントイラスト" />
-        </div>
-        <Logo />
-        {children}
-      </div>
-    </div>
-  );
-});
-
 export default SideTentLayout;

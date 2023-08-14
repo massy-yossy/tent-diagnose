@@ -1,9 +1,9 @@
 import { FC, memo, Dispatch, SetStateAction } from "react";
 import { css } from "@emotion/react";
 
-import Footer from "../templates/footer/Footer";
-import SideTentLayout from "../layout/SideTentLayout";
-import StartButton from "./molecules/StartButton";
+import Footer from "../../templates/footer/Footer";
+import SideTentLayout from "../../layout/SideTentLayout";
+import StartButton from "../molecules/StartButton";
 
 type Props = {
   homePage: boolean;
@@ -11,6 +11,37 @@ type Props = {
   testPage: boolean;
   settestPage: Dispatch<SetStateAction<boolean>>;
 };
+
+const Startpage: FC<Props> = memo((props) => {
+  const { homePage, setHomePage, testPage, settestPage } = props;
+
+  const onClickStart = () => {
+    setHomePage(!homePage);
+    settestPage(!testPage);
+  };
+
+  return (
+    <SideTentLayout>
+      <main css={main}>
+        <div css={container}>
+          <h1 css={title}>
+            おすすめの<br></br>テントタイプ診断
+          </h1>
+          <p css={text}>TENT TYPE TEST.</p>
+          <div css={img}>
+            <img src="./images/tent1.webp" alt="テントイラスト" />
+          </div>
+          <p css={[text, textUnder]}>キャンプはテント選びがとても重要です</p>
+          <p css={[text, textUnder, textLast]}>
+            事前に自分に合ったテントを診断しましょう。
+          </p>
+          <StartButton onClickStart={onClickStart} />
+        </div>
+      </main>
+      <Footer css={footer} />
+    </SideTentLayout>
+  );
+});
 
 const media1600 = `
 @media screen and (max-width: 1600px)
@@ -99,7 +130,7 @@ const textUnder = css`
     font-size: 12px;
     margin-bottom: 7px;
   }
-  `;
+`;
 const textLast = css`
   margin-bottom: 64px;
   ${media1600} {
@@ -109,36 +140,4 @@ const textLast = css`
     margin-bottom: 45px;
   }
 `;
-
-const Startpage: FC<Props> = memo((props) => {
-  const { homePage, setHomePage, testPage, settestPage } = props;
-
-  const onClickStart = () => {
-    setHomePage(!homePage);
-    settestPage(!testPage);
-  };
-
-  return (
-    <SideTentLayout>
-      <main css={main}>
-        <div css={container}>
-          <h1 css={title}>
-            おすすめの<br></br>テントタイプ診断
-          </h1>
-          <p css={text}>TENT TYPE TEST.</p>
-          <div css={img}>
-            <img src="./images/tent1.webp" alt="テントイラスト" />
-          </div>
-          <p css={[text, textUnder]}>キャンプはテント選びがとても重要です</p>
-          <p css={[text, textUnder, textLast]}>
-            事前に自分に合ったテントを診断しましょう。
-          </p>
-          <StartButton onClickStart={onClickStart} />
-        </div>
-      </main>
-      <Footer css={footer} />
-    </SideTentLayout>
-  );
-});
-
 export default Startpage;
