@@ -1,9 +1,14 @@
 import { FC, memo } from "react";
 import { css } from "@emotion/react";
 
-const Logo: FC = memo(() => {
+type Props = {
+  className? : string;
+}
+
+const Logo: FC<Props> = memo((props) => {
+  const { className } = props;
   return (
-    <div css={logo}>
+    <div css={logo} className={className}>
       <a href="https://mypace-outdoor.com/" target="_blank" rel="noopener">
         <img src="./images/logo.webp" alt="ロゴ" />
       </a>
