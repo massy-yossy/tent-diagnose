@@ -1,12 +1,13 @@
 import { FC, memo } from "react";
-import Button from "../atoms/Button";
+
 import { css } from "@emotion/react";
+import StartButton from "../atoms/StartButton";
 
 type Props = {
   onClickStart: () => void;
 };
 
-const StartButton: FC<Props> = memo((props) => {
+const StartButtonMolecules: FC<Props> = memo((props) => {
   const { onClickStart } = props;
 
   return (
@@ -14,7 +15,7 @@ const StartButton: FC<Props> = memo((props) => {
       <span>
         30秒で<br></br>診断！
       </span>
-      <Button onClickStart={onClickStart}>診断スタート</Button>
+      <StartButton onClickStart={onClickStart}>診断スタート</StartButton>
     </div>
   );
 });
@@ -79,4 +80,4 @@ const buttonContainer = css`
     }
   }
 `;
-export default StartButton;
+export default StartButtonMolecules;

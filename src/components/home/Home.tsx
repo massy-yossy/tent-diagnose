@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { memo, FC, useState, useEffect } from "react";
 
-import TestPage from "../testpage/pages/TestPage";
+import TestPage from "../testPage/pages/TestPage";
 import { useAnswer } from "../../hooks/useAnswer";
-import Startpage from "../startpage/page/Startpage";
+import Startpage from "../startPage/page/Startpage";
 
 const Home: FC = memo(() => {
   // ホームページ用

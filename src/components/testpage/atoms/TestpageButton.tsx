@@ -30,6 +30,7 @@ const buttonStyle = css`
   border-radius: 30px;
   display: block;
   cursor: pointer;
+  font-family: "genEi", sans-serif;
   font-size: 18px;
   ${media600}
   {
