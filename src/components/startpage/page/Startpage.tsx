@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 
 import Footer from "../../templates/footer/Footer";
 import SideTentLayout from "../../layout/SideTentLayout";
-import StartButton from "../molecules/StartButton";
+import StartButtonMolecules from "../molecules/StartButtonMolecules";
 
 type Props = {
   homePage: boolean;
@@ -35,7 +35,7 @@ const Startpage: FC<Props> = memo((props) => {
           <p css={[text, textUnder, textLast]}>
             事前に自分に合ったテントを診断しましょう。
           </p>
-          <StartButton onClickStart={onClickStart} />
+          <StartButtonMolecules onClickStart={onClickStart} />
         </div>
       </main>
       <Footer css={footer} />

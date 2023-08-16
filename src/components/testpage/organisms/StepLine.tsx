@@ -3,6 +3,7 @@ import { FC, memo } from "react";
 import { useAnswer } from "../../../hooks/useAnswer";
 import StepNumberLine from "../molecules/StepNumberLine";
 
+
 const StepLine: FC = memo(() => {
   const { answer } = useAnswer();
 

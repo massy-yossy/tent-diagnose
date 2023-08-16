@@ -1,15 +1,15 @@
-import DomeDurable from "../components/answer/pages/dome/DomeDurable";
-import DomeStylish from "../components/answer/pages/dome/DomeStylish";
-import OnepollCheap from "../components/answer/pages/onepoll/OnepollCheap";
-import OnepollCheap3over from "../components/answer/pages/onepoll/OnepollCheap3over";
-import OnepollDome from "../components/answer/pages/onepoll/OnepollDome";
-import OnepollDome3over from "../components/answer/pages/onepoll/OnepollDome3over";
-import OnepollFamily from "../components/answer/pages/onepoll/OnepollFamily";
-import OnepollShelter from "../components/answer/pages/onepoll/OnepollShelter";
-import OnepollShelter3over from "../components/answer/pages/onepoll/OnepollShelter3over";
-import TunnelFamily from "../components/answer/pages/tunnel/TunnelFamily";
-import TworoomGood3over from "../components/answer/pages/tworoom/TworoomGood3over";
-import TworoomLodgeFamily from "../components/answer/pages/tworoom/TworoomLodgeFamily";
+import DomeDurable from "../components/answerPage/pages/dome/DomeDurable";
+import DomeStylish from "../components/answerPage/pages/dome/DomeStylish";
+import OnepollCheap from "../components/answerPage/pages/onepoll/OnepollCheap";
+import OnepollCheap3over from "../components/answerPage/pages/onepoll/OnepollCheap3over";
+import OnepollDome from "../components/answerPage/pages/onepoll/OnepollDome";
+import OnepollDome3over from "../components/answerPage/pages/onepoll/OnepollDome3over";
+import OnepollFamily from "../components/answerPage/pages/onepoll/OnepollFamily";
+import OnepollShelter from "../components/answerPage/pages/onepoll/OnepollShelter";
+import OnepollShelter3over from "../components/answerPage/pages/onepoll/OnepollShelter3over";
+import TunnelFamily from "../components/answerPage/pages/tunnel/TunnelFamily";
+import TworoomGood3over from "../components/answerPage/pages/tworoom/TworoomGood3over";
+import TworoomLodgeFamily from "../components/answerPage/pages/tworoom/TworoomLodgeFamily";
 
 export const TenttypeRouter = [
   //1人用

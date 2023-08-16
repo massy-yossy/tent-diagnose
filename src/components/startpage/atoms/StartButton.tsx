@@ -6,7 +6,7 @@ type Props = {
   children: string;
 };
 
-const Button: FC<Props> = memo((props) => {
+const StartButton: FC<Props> = memo((props) => {
   const { onClickStart, children } = props;
 
   return (
@@ -49,4 +49,4 @@ const button = css`
   }
 
 `;
-export default Button;
+export default StartButton;
