@@ -1,8 +1,10 @@
 import { FC, memo } from "react";
-import { affilierDataType } from "../../../types/affilierDataType";
-
 import { css } from "@emotion/react";
+
+import { affilierDataType } from "../../../types/affilierDataType";
 import AffilierButton from "../atoms/AffilierButton";
+
+
 
 type Props = {
   data: affilierDataType;
