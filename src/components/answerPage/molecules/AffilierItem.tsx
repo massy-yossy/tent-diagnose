@@ -1,7 +1,8 @@
 import { FC, memo } from "react";
 import { affilierDataType } from "../../../types/affilierDataType";
-import AffilierButton from "../atoms/affilierButton";
+
 import { css } from "@emotion/react";
+import AffilierButton from "../atoms/AffilierButton";
 
 type Props = {
   data: affilierDataType;
@@ -21,14 +22,27 @@ const AffilierItem: FC<Props> = memo((props) => {
           <p css={tentName}>{data.tentName}</p>
         </div>
         <div css={buttonContainer}>
-          <AffilierButton css={amazon} affilierLink={data.amazon}>Amazon</AffilierButton>
-          <AffilierButton css={rakuten} affilierLink={data.rakuten}>楽天</AffilierButton>
-          <AffilierButton css={yahoo} affilierLink={data.yahoo}>Yahoo!</AffilierButton>
+          <AffilierButton css={amazon} affilierLink={data.amazon}>
+            Amazon
+          </AffilierButton>
+          <AffilierButton css={rakuten} affilierLink={data.rakuten}>
+            楽天
+          </AffilierButton>
+          <AffilierButton css={yahoo} affilierLink={data.yahoo}>
+            Yahoo!
+          </AffilierButton>
         </div>
       </div>
     </div>
   );
 });
+
+const media1600 = `
+@media screen and (max-width: 1600px)
+`;
+const media600 = `
+@media screen and (max-width: 600px)
+`;
 
 const affContainer = css`
   background-color: #f6f3e4;
@@ -38,7 +52,16 @@ const affContainer = css`
   display: flex;
   gap: 30px;
   box-sizing: border-box;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  ${media1600} {
+    width: 450px;
+  }
+  ${media600} {
+    width: 100%;
+    padding: 18px 11px 18px 12px;
+    gap: 15px;
+  }
 `;
 const img = css`
   flex-shrink: 0;
@@ -48,39 +71,57 @@ const img = css`
     width: 100%;
     object-fit: cover;
   }
+  ${media600} {
+    width: 160px;
+    height: 160px;
+  }
 `;
 const textContainer = css`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-height: 195px;
+  ${media600}
+  {
+    max-height: 160px;
+  }
 `;
 const bland = css`
-width: fit-content;
+  width: fit-content;
   font-size: 12px;
   font-weight: bold;
   padding: 1px 7px 0px;
   margin-bottom: 6px;
-  background-color: #B88F1F;
+  background-color: #b88f1f;
   line-height: 1;
   color: #fff;
+  ${media600} {
+    font-size: 10px;
+  }
 `;
 const tentName = css`
   font-size: 14px;
   line-height: calc(26 / 16);
   font-weight: bold;
-`
+  ${media600}
+  {
+    font-size: 12px;
+    line-height: calc(26 / 16);
+
+  }
+`;
 const buttonContainer = css`
   display: flex;
   flex-direction: column;
   gap: 8px;
-`
+`;
 const amazon = css`
-  background-color: #FC9106;
-`
+  background-color: #fc9106;
+`;
 const rakuten = css`
-  background-color: #62C8CF;
-`
+  background-color: #62c8cf;
+`;
 const yahoo = css`
-  background-color: #F56F74;
-`
+  background-color: #f56f74;
+`;
 export default AffilierItem;

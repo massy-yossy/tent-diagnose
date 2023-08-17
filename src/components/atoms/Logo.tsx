@@ -1,14 +1,11 @@
 import { FC, memo } from "react";
 import { css } from "@emotion/react";
 
-type Props = {
-  className? : string;
-}
 
-const Logo: FC<Props> = memo((props) => {
-  const { className } = props;
+const Logo: FC = memo(() => {
+
   return (
-    <div css={logo} className={className}>
+    <div css={logo}>
       <a href="https://mypace-outdoor.com/" target="_blank" rel="noopener">
         <img src="./images/logo.webp" alt="ロゴ" />
       </a>
@@ -22,8 +19,8 @@ const media600 = `
 
 const logo = css`
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 27px;
+  left: 36px;
   width: 197px;
   height: auto;
   img {
@@ -32,6 +29,8 @@ const logo = css`
   }
   ${media600} {
     width: 123px;
+    top: 16px;
+    left: 10px;
   }
 `;
 

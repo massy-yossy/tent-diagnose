@@ -41,7 +41,7 @@ const buttonContainer = css`
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 34px;
+  gap: 28px;
   ${media600} {
     gap: 15px;
   }

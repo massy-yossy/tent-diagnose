@@ -16,7 +16,7 @@ const SideTentLayout: FC<Props> = memo(({ children }) => {
         <div css={rightimg}>
           <img src="./images/tent1.webp" alt="テントイラスト" />
         </div>
-        <Logo css={logo} />
+        <Logo />
         {children}
       </div>
     </div>
@@ -26,17 +26,7 @@ const SideTentLayout: FC<Props> = memo(({ children }) => {
 const media990 = `
 @media screen and (max-width: 990px)
 `;
-const media600 = `
-@media screen and (max-width: 600px)
-`;
-const logo = css`
-  top: 27px;
-  left: 36px;
-  ${media600} {
-    top: 16px;
-    left: 17px;
-  }
-`;
+
 const container = css`
   background-color: rgba(255, 254, 243, 0.7);
 `;
@@ -49,7 +39,7 @@ const wrapper = css`
 `;
 
 const leftimg = css`
-  width: 34%;
+  width: 30%;
   position: absolute;
   top: 31%;
   left: 3%;
@@ -58,7 +48,7 @@ const leftimg = css`
   }
 `;
 const rightimg = css`
-  width: 34%;
+  width: 30%;
   position: absolute;
   top: 44%;
   right: 1.7%;
