@@ -1,9 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { memo, FC, useState, useEffect } from "react";
 
-import TestPage from "../testPage/pages/TestPage";
 import { useAnswer } from "../../hooks/useAnswer";
-import Startpage from "../startPage/page/Startpage";
+
+import TestPage from "../testPage/pages/TestPage";
+import StartPage from "../startPage/page/StartPage";
+
+
 
 const Home: FC = memo(() => {
   // ホームページ用
@@ -20,7 +23,7 @@ const Home: FC = memo(() => {
   return (
     <>
       {homePage && (
-        <Startpage
+        <StartPage
           homePage={homePage}
           setHomePage={setHomePage}
           testPage={testPage}

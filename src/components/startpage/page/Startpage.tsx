@@ -13,7 +13,7 @@ type Props = {
   settestPage: Dispatch<SetStateAction<boolean>>;
 };
 
-const Startpage: FC<Props> = memo((props) => {
+const StartPage: FC<Props> = memo((props) => {
   const { homePage, setHomePage, testPage, settestPage } = props;
 
   const onClickStart = () => {
@@ -146,4 +146,4 @@ const textLast = css`
     margin-bottom: 30px;
   }
 `;
-export default Startpage;
+export default StartPage;
