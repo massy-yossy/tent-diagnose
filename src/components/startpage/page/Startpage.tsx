@@ -1,9 +1,10 @@
 import { FC, memo, Dispatch, SetStateAction } from "react";
 import { css } from "@emotion/react";
 
-import Footer from "../../templates/footer/Footer";
+
 import SideTentLayout from "../../layout/SideTentLayout";
 import StartButtonMolecules from "../molecules/StartButtonMolecules";
+import Footer from "../../templates/footer/Footer";
 
 type Props = {
   homePage: boolean;
@@ -72,6 +73,11 @@ const main = css`
 const container = css`
   text-align: center;
   font-family: "genEi", sans-serif;
+  margin-top: -30px;
+  ${media600}
+  {
+    margin-top: -20px;
+  }
 `;
 //タイトル
 const title = css`
@@ -127,7 +133,7 @@ const textUnder = css`
     margin-bottom: 16px;
   }
   ${media600} {
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 7px;
   }
 `;
@@ -137,7 +143,7 @@ const textLast = css`
     margin-bottom: 54px;
   }
   ${media600} {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 `;
 export default Startpage;

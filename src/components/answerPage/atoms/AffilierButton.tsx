@@ -1,5 +1,5 @@
-import { css } from "@emotion/react";
 import { FC, memo, ReactNode } from "react";
+import { css } from "@emotion/react";
 
 type Props = {
   affilierLink: string;
@@ -18,7 +18,9 @@ const AffilierButton: FC<Props> = memo((props) => {
     </div>
   );
 });
-
+const media600 = `
+@media screen and (max-width: 600px)
+`;
 const buttonStyle = css`
   width: 160px;
   a {
@@ -32,6 +34,14 @@ const buttonStyle = css`
     width: 100%;
     padding: 11px 0;
     text-align: center;
+  }
+  ${media600}
+  {
+    width: 140px;
+    a{
+      font-size: 12px;
+      padding: 6px 0;
+    }
   }
 `;
 

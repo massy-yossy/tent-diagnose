@@ -9,6 +9,11 @@ const TopToButton: FC = memo(() => {
     </Link>
   );
 });
+
+const media600 = `
+@media screen and (max-width: 600px)
+`;
+
 const buttonStyle = css`
   display: flex;
   justify-content: center;
@@ -19,9 +24,14 @@ const buttonStyle = css`
   font-size: 20px;
   font-family: "genEi", sans-serif;
   color: #fff;
-  font-weight: 400;
+  font-weight: normal;
   border-radius: 34px;
   margin-right: auto;
   margin-left: auto;
+  ${media600}
+  {
+    height: 53px;
+    font-size: 18px;
+  }
 `;
 export default TopToButton;

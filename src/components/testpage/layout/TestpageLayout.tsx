@@ -3,9 +3,9 @@ import { FC, memo } from "react";
 import { tentpageType } from "../../../types/tentpageType";
 import StepLine from "../organisms/StepLine";
 import { css } from "@emotion/react";
-import Footer from "../../templates/footer/Footer";
 import ButtonContainer from "../molecules/ButtonContainer";
 import SideTentLayout from "../../layout/SideTentLayout";
+import Footer from "../../templates/footer/Footer";
 
 const TestpageLayout: FC<tentpageType> = memo((props) => {
   const { title, subtitle, question1, question2, question3, buttonSize } =
@@ -14,7 +14,7 @@ const TestpageLayout: FC<tentpageType> = memo((props) => {
   return (
     <SideTentLayout>
       <main css={main}>
-        <div>
+        <div css={container}>
           <StepLine />
           <h2 css={titleStyle}>{title}</h2>
           <p css={subtitleStyle}>{subtitle}</p>
@@ -44,6 +44,9 @@ const main = css`
   text-align: center;
   font-family: "genEi", sans-serif;
 `;
+const container = css`
+  margin-top: -30px;
+`;
 // タイトル
 const titleStyle = css`
   font-size: 30px;
@@ -58,13 +61,12 @@ const titleStyle = css`
 `;
 const subtitleStyle = css`
   font-size: 20px;
-  margin-bottom: 88px;
+  margin-bottom: 57px;
   line-height: calc(27 / 20);
-  ${media600}
-  {
+  ${media600} {
     font-size: 12px;
     line-height: calc(16 / 12);
-    margin-bottom: 66px;
+    margin-bottom: 57px;
   }
 `;
 //footer
