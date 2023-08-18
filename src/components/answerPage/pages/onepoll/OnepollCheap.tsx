@@ -16,7 +16,7 @@ const OnepollCheap = () => {
       }
       features={
         <>
-          <img src="./images/tent1.webp" alt="tent1.webp" />
+          <img src="./images/article/onepoll1.webp" alt="テント写真" />
           ワンポールテントとは、真ん中の1本のポールで支える円錐型テントのことです。
           <br />
           とんがり屋根の可愛らしい見た目が特徴で、モノポールテントやティピーテントとも呼ばれています。
@@ -24,6 +24,7 @@ const OnepollCheap = () => {
       }
       goodPoint={
         <>
+          <img src="./images/article/onepoll2.webp" alt="テント写真" />
           ワンポールテントのメリットは、以下の3つです。
           <ul>
             <li>設営が簡単</li>
@@ -47,6 +48,7 @@ const OnepollCheap = () => {
       }
       importantPoint={
         <>
+          <img src="./images/article/onepoll3.webp" alt="テント写真" />
           ワンポールテントは比較的値段の安いタイプですが、あまりにも安すぎるテントは避けることをおすすめします。
           <ul>
             <li>耐久性がない</li>
