@@ -2,9 +2,8 @@
 import { memo, FC, useState, useEffect } from "react";
 
 import { useAnswer } from "../../hooks/useAnswer";
-
-import TestPage from "../testPage/pages/TestPage";
 import StartPage from "../startPage/page/StartPage";
+import TestPage from "../testPage/pages/TestPage";
 
 
 
