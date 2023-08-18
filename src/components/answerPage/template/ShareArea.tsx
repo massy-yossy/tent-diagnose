@@ -8,9 +8,9 @@ const ShareArea: FC = memo(() => {
     <div css={container}>
       <div css={wrapper}>
         <p css={text}>
-          テキストテキストテキストテキストテキストテキストテキスト
+          最後までご愛読ありがとうございました。
           <br />
-          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          mypaceoutdoorは、キャンプ・サーフィンの『初めて』を支援するため、初心者の方に役立つ情報を配信し続けてまいります。
         </p>
         <ShareButtons />
         <TopToButton />

@@ -30,7 +30,9 @@ const ShareButtons: FC = memo(() => {
           target="_blank"
           rel="nofollow noopener noreferrer"
           title="LINEに送る"
-        ></a>
+        >
+          <img src="./images/line.svg" alt="LINE" />
+        </a>
         <a css={link} href="#" onClick={copyToUrl}>
           <img src="./images/link.png" alt="" />
         </a>
@@ -88,23 +90,6 @@ const line = css`
   ${media600} {
     width: 33px;
     height: 31px;
-  }
-  &::before {
-    content: "LINE";
-    display: block;
-    font-size: 11px;
-    font-weight: bold;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    color: #d1bf79;
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    ${media600}
-    {
-      top: 6px;
-      left: 4px;
-    }
   }
 `;
 const link = css`
