@@ -167,8 +167,7 @@ const sp_mainImge = css`
 const mainTextArea = css`
   padding-top: 38px;
   ${media600} {
-    padding-top: 25px;
-    padding-bottom: 73px;
+    padding: 25px 10px 73px;
   }
 `;
 const mainText = css`
