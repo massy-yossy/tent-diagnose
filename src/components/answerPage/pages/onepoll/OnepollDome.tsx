@@ -6,7 +6,7 @@ const OnepollDome: FC = memo(() => {
   return (
     <AnswerPageLayout
       tentName="ワンポールテント"
-      image="./images/tent-illustration/onepolldome.webp"
+      image="./images/tent-illustration/onepoll.webp"
       tentComment={
         <>
           冬のソロキャンプは、寒さ対策として
