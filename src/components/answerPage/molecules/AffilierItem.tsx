@@ -96,7 +96,7 @@ const bland = css`
   width: fit-content;
   font-size: 12px;
   font-weight: bold;
-  padding: 1px 7px 0px;
+  padding: 3px 7px 2px;
   margin-bottom: 6px;
   background-color: #b88f1f;
   line-height: 1;
