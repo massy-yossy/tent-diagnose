@@ -9,7 +9,7 @@ import OnepollShelter from "../components/answerPage/pages/onepoll/OnepollShelte
 import OnepollShelter3over from "../components/answerPage/pages/onepoll/OnepollShelter3over";
 import TunnelFamily from "../components/answerPage/pages/tunnel/TunnelFamily";
 import TworoomGood3over from "../components/answerPage/pages/tworoom/TworoomGood3over";
-import TworoomLodgeFamily from "../components/answerPage/pages/tworoom/TworoomLodgeFamily";
+import LodgeFamily from "../components/answerPage/pages/lodge/LodgeFamily";
 
 export const TenttypeRouter = [
   //1人用
@@ -61,6 +61,6 @@ export const TenttypeRouter = [
   },
   {
     path: "/tenttype_23",
-    compornent: <TworoomLodgeFamily />
+    compornent: <LodgeFamily />
   },
 ]
