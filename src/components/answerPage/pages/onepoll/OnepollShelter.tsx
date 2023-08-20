@@ -20,7 +20,7 @@ const OnepollShelter: FC = memo(() => {
         <>
           <img src="./images/article/onepoll1.webp" alt="テント写真" />
           ワンポールテントとは、真ん中の1本のポールで支える円錐型テントのことです。
-          <br />
+          <br /><br />
           とんがり屋根の可愛らしい見た目が特徴で、モノポールテントやティピーテントとも呼ばれています。
           <br />
           <br />
