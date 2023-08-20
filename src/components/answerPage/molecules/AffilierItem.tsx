@@ -69,10 +69,11 @@ const img = css`
   flex-shrink: 0;
   width: 195px;
   height: 195px;
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
   ${media600} {
     width: 160px;
     height: 160px;
