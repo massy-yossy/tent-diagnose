@@ -2,7 +2,7 @@ import { FC, memo, ReactNode } from "react";
 import { css } from "@emotion/react";
 
 type Props = {
-  affilierLink: string;
+  affilierLink ?: string;
   children: ReactNode;
   className?: string;
 };

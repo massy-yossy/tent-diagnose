@@ -1,8 +1,10 @@
 import { FC, memo } from "react";
 
 import AnswerPageLayout from "../../layout/AnswerPageLayout";
-import { OnepollShelterData } from "../../affilierData/onepoll/OnepollShelterData";
+
 import { css } from "@emotion/react";
+import { onepollShelterData } from "../../affilierData/onepoll/onepollShelterData";
+
 
 const OnepollShelter: FC = memo(() => {
   return (
@@ -79,7 +81,7 @@ const OnepollShelter: FC = memo(() => {
           簡単な対策は、メッシュのインナーテントを使用する、コットなどを使って底上げをするなどが挙げられます。
         </>
       }
-      affilierData={OnepollShelterData}
+      affilierData={onepollShelterData}
     />
   );
 });

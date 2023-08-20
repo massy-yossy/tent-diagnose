@@ -1,7 +1,7 @@
 import { FC, memo } from "react";
 
 import AnswerPageLayout from "../../layout/AnswerPageLayout";
-import { OnepollCheap3overData } from "../../affilierData/onepoll/OnepollCheap3overData";
+import { onepollCheap3overData } from "../../affilierData/onepoll/onepollCheap3overData";
 
 const OnepollCheap3over: FC = memo(() => {
   return (
@@ -67,7 +67,7 @@ const OnepollCheap3over: FC = memo(() => {
           本気で趣味にしたいと思っている方は、最低でも1万円以上のテントを購入するようにしましょう。
         </>
       }
-      affilierData={OnepollCheap3overData}
+      affilierData={onepollCheap3overData}
     />
   );
 });

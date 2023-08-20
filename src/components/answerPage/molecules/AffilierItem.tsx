@@ -4,8 +4,6 @@ import { css } from "@emotion/react";
 import { affilierDataType } from "../../../types/affilierDataType";
 import AffilierButton from "../atoms/AffilierButton";
 
-
-
 type Props = {
   data: affilierDataType;
 };
@@ -24,15 +22,21 @@ const AffilierItem: FC<Props> = memo((props) => {
           <p css={tentName}>{data.tentName}</p>
         </div>
         <div css={buttonContainer}>
-          <AffilierButton css={amazon} affilierLink={data.amazon}>
-            Amazon
-          </AffilierButton>
-          <AffilierButton css={rakuten} affilierLink={data.rakuten}>
-            楽天
-          </AffilierButton>
-          <AffilierButton css={yahoo} affilierLink={data.yahoo}>
-            Yahoo!
-          </AffilierButton>
+          {data.amazon && (
+            <AffilierButton css={amazon} affilierLink={data.amazon}>
+              Amazon
+            </AffilierButton>
+          )}
+          {data.rakuten && (
+            <AffilierButton css={rakuten} affilierLink={data.rakuten}>
+              楽天
+            </AffilierButton>
+          )}
+          {data.yahoo && (
+            <AffilierButton css={yahoo} affilierLink={data.yahoo}>
+              Yahoo!
+            </AffilierButton>
+          )}
         </div>
       </div>
     </div>
@@ -84,8 +88,7 @@ const textContainer = css`
   flex-direction: column;
   justify-content: space-between;
   max-height: 195px;
-  ${media600}
-  {
+  ${media600} {
     max-height: 160px;
   }
 `;
@@ -106,11 +109,9 @@ const tentName = css`
   font-size: 14px;
   line-height: calc(26 / 16);
   font-weight: bold;
-  ${media600}
-  {
+  ${media600} {
     font-size: 12px;
     line-height: calc(26 / 16);
-
   }
 `;
 const buttonContainer = css`

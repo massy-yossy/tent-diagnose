@@ -1,6 +1,6 @@
 import { affilierDataType } from "../../../../types/affilierDataType";
 
-export const OnepollCheap3overData: affilierDataType[] = [
+export const onepollCheap3overData: affilierDataType[] = [
   {
     id:1,
     blandName: "DOD",
