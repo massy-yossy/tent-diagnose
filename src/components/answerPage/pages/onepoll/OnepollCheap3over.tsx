@@ -7,7 +7,7 @@ const OnepollCheap3over: FC = memo(() => {
   return (
     <AnswerPageLayout
       tentName="ワンポールテント"
-      image="./images/onepollTent.webp"
+      image="./images/tent-illustration/onepoll.webp"
       tentComment={
         <>
           キャンプ初心者でも手を出しやすい、

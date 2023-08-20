@@ -8,7 +8,7 @@ const OnepollShelter: FC = memo(() => {
   return (
     <AnswerPageLayout
       tentName="ワンポールテント"
-      image="./images/onepollTent.webp"
+      image="./images/tent-illustration/onepoll.webp"
       tentComment={
         <>
           夏のソロキャンプは、
