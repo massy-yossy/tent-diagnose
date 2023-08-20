@@ -3,7 +3,7 @@ export type affilierDataType = {
   blandName: string;
   tentName: string;
   image: string;
-  amazon: string;
-  rakuten: string;
-  yahoo: string;
+  amazon ?: string;
+  rakuten ?: string;
+  yahoo ?: string;
 };
