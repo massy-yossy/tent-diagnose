@@ -1,6 +1,7 @@
 import { FC, memo } from "react";
 import AnswerPageLayout from "../../layout/AnswerPageLayout";
 import { domeStylishData } from "../../affilierData/dome/domeStylishData";
+import StyleTextRed from "../../styles/StyleTextRed";
 
 const DomeStylish: FC = memo(() => {
   return (
@@ -19,9 +20,8 @@ const DomeStylish: FC = memo(() => {
           <img src="./images/article/dome1.webp" alt="テント写真" />
           天井が丸みを帯びたドーム型テントのこと。
           <br />
-          ポールのしなりによって生地を持ち上げているため、余裕のある空間作りと強度が魅力です。
           <br />
-          中にはペグを打たなくても自立するタイプもあります。
+          ポールのしなりによって生地を持ち上げているため、余裕のある空間作りと強度が魅力です。中にはペグを打たなくても自立するタイプもあります。
         </>
       }
       goodPoint={
@@ -34,13 +34,14 @@ const DomeStylish: FC = memo(() => {
             <li>テント内を広々使える</li>
             <li>設営が簡単</li>
           </ul>
-          
-          丸い形状のドームテントは、雨が降っても地面に流れ落ち、風の影響も受けにくいことから、登山などでも使用されています。
+          丸い形状のドームテントは、
+          <StyleTextRed>
+            雨が降っても地面に流れ落ち、風の影響も受けにくい
+          </StyleTextRed>
+          ことから、登山などでも使用されています。
           <br />
           <br />
-          また、ワンポールテントはデットスペース（狭く使いづらいスペース）が多くレイアウトに困ることもありますが、広々スペースのドームテントはその心配がありません。
-          <br />
-          天井高く、優雅に寛げるのは、ドームテントの大きなメリットといえます。
+          また、ワンポールテントはデットスペース（狭く使いづらいスペース）が多くレイアウトに困ることもありますが、広々スペースのドームテントはその心配がありません。天井高く、優雅に寛げるのは、ドームテントの大きなメリットといえます。
           <br />
           <br />
           ワンポールテント同様、ドームテントも設営がとても簡単なので、初心者でも安心です。
@@ -50,7 +51,7 @@ const DomeStylish: FC = memo(() => {
         <>
           <img src="./images/article/dome3.webp" alt="テント写真" />
           テントがおしゃれだと、テンションが上がりますよね。
-          <br />
+          <br /><br />
           キャンプを楽しむためにも、デザイン性に優れたおしゃれなテントを選ぶことはとても良いことですが、最低限の機能性は確保しておきましょう。
           <br />
           <br />

@@ -17,7 +17,7 @@ const globalCss = css`
 
 function App() {
   return (
-    <BrowserRouter basename="/aaa/">
+    <BrowserRouter basename="/tent-shindan/">
       <AnswerProvider>
         <Global styles={globalCss} />
         <Router />

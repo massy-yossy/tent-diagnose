@@ -2,6 +2,7 @@ import { FC, memo } from "react";
 
 import AnswerPageLayout from "../../layout/AnswerPageLayout";
 import { tunnelFamilyData } from "../../affilierData/tunnel/tunnelFamilyData";
+import StyleTextRed from "../../styles/StyleTextRed";
 
 const TunnelFamily: FC = memo(() => {
   return (
@@ -36,7 +37,11 @@ const TunnelFamily: FC = memo(() => {
           トンネルテントは、大型テントなので設営が困難に思えますが、構造がシンプルなので意外と簡単に設営できてしまいます。とはいえ、1人で設営するのは大変なので、2～3人で協力して設営しましょう。
           <br />
           <br />
-          また、トンネル部分のアーチ形は風の抵抗を抑える効果があり、急な突風や風の強い海沿いキャンプでも安心です。
+          また、
+          <StyleTextRed>
+            トンネル部分のアーチ形は風の抵抗を抑える効果があり、急な突風や風の強い海沿いキャンプでも安心
+          </StyleTextRed>
+          です。
           <br />
           <br />
           せっかくのファミリーキャンプで窮屈な思いはしたくないですよね。トンネルテントなら、テント内も広々使えるので、快適に過ごせるでしょう。
@@ -48,7 +53,9 @@ const TunnelFamily: FC = memo(() => {
           トンネルテントのデメリットとして、サイズが大きいので持ち運びに不便な点が挙げられます。大型のトンネルテントの場合は、重さが20kgを超えることもあるため、車の積載量などは事前に確認しておきましょう。
           <br />
           <br />
-          また、フルクローズにすると「熱がこもりやすい」というデメリットもあります。
+          また、フルクローズにすると「
+          <StyleTextRed>熱がこもりやすい</StyleTextRed>
+          」というデメリットもあります。
           <br />
           <br />
           とくに夏場は熱気がこもってしまう可能性があるので、サイドパネルをフルオープンにできるタイプを選ぶのがおすすめです。

@@ -18,11 +18,11 @@ const ShareButtons: FC = memo(() => {
       <div css={buttonContainer}>
         <a
           css={twitter}
-          href={`http://twitter.com/share?url=${url}&text=あなたにおすすめのテントタイプ診断結果です！`}
+          href={`http://twitter.com/share?url=${url}&text=「おすすめのテントタイプ診断」診断結果です！`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="./images/twitter.webp" alt="" />
+          <img src="./images/twitter.webp" alt="twitter" />
         </a>
         <a
           css={line}

@@ -1,9 +1,9 @@
-import {FC, memo} from "react"
+import { FC, memo } from "react";
 
 import AnswerPageLayout from "../../layout/AnswerPageLayout";
 import { css } from "@emotion/react";
 import { onepollShelter3overData } from "../../affilierData/onepoll/onepollShelter3overData";
-
+import StyleTextRed from "../../styles/StyleTextRed";
 
 const OnepollShelter3over: FC = memo(() => {
   return (
@@ -12,7 +12,8 @@ const OnepollShelter3over: FC = memo(() => {
       image="./images/tent-illustration/onepoll.webp"
       tentComment={
         <>
-          夏のグループキャンプは、<br />
+          夏のグループキャンプは、
+          <br />
           ワンポールテントのシェルタータイプがおすすめです。
         </>
       }
@@ -20,7 +21,8 @@ const OnepollShelter3over: FC = memo(() => {
         <>
           <img src="./images/article/onepoll1.webp" alt="テント写真" />
           ワンポールテントとは、真ん中の1本のポールで支える円錐型テントのことです。
-          <br /><br />
+          <br />
+          <br />
           とんがり屋根の可愛らしい見た目が特徴で、モノポールテントやティピーテントとも呼ばれています。
           <br />
           <br />
@@ -40,7 +42,7 @@ const OnepollShelter3over: FC = memo(() => {
             <li>幅広いアレンジが可能</li>
           </ul>
           ワンポールテントの設営は「
-          <span>テントを広げてメインポールを立てるだけ</span>
+          <StyleTextRed>テントを広げてメインポールを立てるだけ</StyleTextRed>
           」なので、初心者の方でも簡単に設営できます。
           <br />
           キャンプ初心者にとって、テントの設営は難関といっても過言ではありません。
@@ -48,9 +50,7 @@ const OnepollShelter3over: FC = memo(() => {
           面倒な設営がラクになるのはワンポールテントの大きなメリットといえます。
           <br />
           <br />
-          また、ワンポールテントの形状にもよりますが、天敵と呼べる「風」に強いのも大きな特徴です。
-          <br />
-          より風に強いテントを選ぶ際は、面の数が多いワンポールテントを選びましょう。（四角形より六角形、さらに八角形）
+          また、ワンポールテントの形状にもよりますが、天敵と呼べる「風」に強いのも大きな特徴です。より風に強いテントを選ぶ際は、面の数が多いワンポールテントを選びましょう。（四角形より六角形、さらに八角形）
           <br />
           <br />
           ワンポールテントは、インナーテントや煙突、スカート付きなど、きせつに応じてアレンジできる点も大きなメリットのひとつです。
@@ -70,7 +70,10 @@ const OnepollShelter3over: FC = memo(() => {
           とりあえず試しに1回行ってみたいという方にはおすすめですが、キャンプを趣味にしたいと考えている方にはおすすめできません。
           <br />
           <br />
-          本気で趣味にしたいと思っている方は、最低でも1万円以上のテントを購入するようにしましょう。
+          <StyleTextRed>
+            本気で趣味にしたいと思っている方は、最低でも1万円以上のテントを購入
+          </StyleTextRed>
+          するようにしましょう。
           <br />
           <br />
           また、夏場はシェルターテントで通気性をアップさせることも重要ですが、雨による浸水や虫対策は万全にしておきましょう。
@@ -81,8 +84,8 @@ const OnepollShelter3over: FC = memo(() => {
       }
       affilierData={onepollShelter3overData}
     />
-  )
-})
+  );
+});
 
 const media600 = `
 @media screen and (max-width: 600px)
@@ -114,4 +117,4 @@ const sectionText = css`
     font-size: 15px;
   }
 `;
-export default OnepollShelter3over
+export default OnepollShelter3over;

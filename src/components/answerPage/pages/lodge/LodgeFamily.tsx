@@ -2,6 +2,7 @@ import { FC, memo } from "react";
 
 import AnswerPageLayout from "../../layout/AnswerPageLayout";
 import { lodgeFamilyData } from "../../affilierData/lodge/lodgeFamilyData";
+import StyleTextRed from "../../styles/StyleTextRed";
 
 const LodgeFamily: FC = memo(() => {
   return (
@@ -35,13 +36,20 @@ const LodgeFamily: FC = memo(() => {
           頑丈な鉄骨で骨組みを造り、そこに幕をかぶせて立ち上げるだけなので、1人では難しいですが2～3人であれば簡単に問題なく設営できるでしょう。
           <br />
           <br />
-          また、ロッジテントの室内は、ワンポールテントの天井の高さとドームテントの広さを良いとこ取りしたようなイメージで、生活しやすい環境です。
+          また、
+          <StyleTextRed>
+            ロッジテントの室内は、ワンポールテントの天井の高さとドームテントの広さを良いとこ取りしたようなイメージ
+          </StyleTextRed>
+          で、生活しやすい環境です。
         </>
       }
       importantPoint={
         <>
           <img src="./images/article/lodge3.webp" alt="ロッジテント" />
-          ロッジテントのデメリットは、他のテントに比べて価格が高いことです。ファミリーキャンプ用の大型テントなので仕方ありませんが、安いテントが欲しいと考えている方にはネックになるでしょう。
+          ロッジテントのデメリットは、他のテントに比べて価格が高いことです。
+          <br />
+          <br />
+          ファミリーキャンプ用の大型テントなので仕方ありませんが、安いテントが欲しいと考えている方にはネックになるでしょう。
           <br />
           <br />
           また、大型テントなので、重量が重く嵩張（かさば）ることがあるので、注意が必要です。
