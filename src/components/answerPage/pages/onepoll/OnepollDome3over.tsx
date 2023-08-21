@@ -1,8 +1,8 @@
-import {FC, memo} from "react"
+import { FC, memo } from "react";
 
-import AnswerPageLayout from "../../layout/AnswerPageLayout"
-import { onepollDome3overData } from "../../affilierData/onepoll/onepollDome3overData"
-
+import AnswerPageLayout from "../../layout/AnswerPageLayout";
+import { onepollDome3overData } from "../../affilierData/onepoll/onepollDome3overData";
+import StyleTextRed from "../../styles/StyleTextRed";
 
 const OnepollDome3over: FC = memo(() => {
   return (
@@ -35,17 +35,14 @@ const OnepollDome3over: FC = memo(() => {
             <li>幅広いアレンジが可能</li>
           </ul>
           ワンポールテントの設営は「
-          <span>テントを広げてメインポールを立てるだけ</span>
+          <StyleTextRed>テントを広げてメインポールを立てるだけ</StyleTextRed>
           」なので、初心者の方でも簡単に設営できます。
           <br />
           <br />
           キャンプ初心者にとって、テントの設営は難関といっても過言ではありません。面倒な設営がラクになるのはワンポールテントの大きなメリットといえます。
           <br />
           <br />
-          また、ワンポールテントの形状にもよりますが、天敵と呼べる「風」に強いのも大きな特徴です。
-          <br />
-          <br />
-          より風に強いテントを選ぶ際は、面の数が多いワンポールテントを選びましょう。（四角形より六角形、さらに八角形）
+          また、ワンポールテントの形状にもよりますが、天敵と呼べる「風」に強いのも大きな特徴です。より風に強いテントを選ぶ際は、面の数が多いワンポールテントを選びましょう。（四角形より六角形、さらに八角形）
           <br />
           <br />
           ワンポールテントは、インナーテントや煙突、スカート付きなど、きせつに応じてアレンジできる点も大きなメリットのひとつです。
@@ -54,13 +51,13 @@ const OnepollDome3over: FC = memo(() => {
       importantPoint={
         <>
           <img src="./images/article/onepoll3.webp" alt="テント写真" />
-          冬のキャンプで大切なのは「寒さ対策」。
+          冬のキャンプで大切なのは「寒さ対策」。冬場はテント下から冷気が入り込んでくるので「スカート（袖）」付きのテントがおすすめです。
           <br />
           <br />
-          冬場はテント下から冷気が入り込んでくるので「スカート（袖）」付きのテントがおすすめです。
-          <br />
-          <br />
-          スカート付きテントはどうしても値段が少し高くなってしまいますが、スカートなしの安いテントでは寒すぎてキャンプどころではなくなってしまいます。
+          スカート付きテントはどうしても値段が少し高くなってしまいますが、
+          <StyleTextRed>
+            スカートなしの安いテントでは寒すぎてキャンプどころではなくなってしまいます。
+          </StyleTextRed>
           <br />
           <br />
           また、煙突が付いたワンポールテントなら、テント内で薪ストーブを楽しむことも可能です。
@@ -68,7 +65,7 @@ const OnepollDome3over: FC = memo(() => {
       }
       affilierData={onepollDome3overData}
     />
-  )
-})
+  );
+});
 
-export default OnepollDome3over
+export default OnepollDome3over;

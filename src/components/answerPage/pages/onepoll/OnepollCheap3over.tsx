@@ -2,6 +2,7 @@ import { FC, memo } from "react";
 
 import AnswerPageLayout from "../../layout/AnswerPageLayout";
 import { onepollCheap3overData } from "../../affilierData/onepoll/onepollCheap3overData";
+import StyleTextRed from "../../styles/StyleTextRed";
 
 const OnepollCheap3over: FC = memo(() => {
   return (
@@ -34,17 +35,14 @@ const OnepollCheap3over: FC = memo(() => {
             <li>幅広いアレンジが可能</li>
           </ul>
           ワンポールテントの設営は「
-          <span>テントを広げてメインポールを立てるだけ</span>
+          <StyleTextRed>テントを広げてメインポールを立てるだけ</StyleTextRed>
           」なので、初心者の方でも簡単に設営できます。
           <br />
           <br />
           キャンプ初心者にとって、テントの設営は難関といっても過言ではありません。面倒な設営がラクになるのはワンポールテントの大きなメリットといえます。
           <br />
           <br />
-          また、ワンポールテントの形状にもよりますが、天敵と呼べる「風」に強いのも大きな特徴です。
-          <br />
-          <br />
-          より風に強いテントを選ぶ際は、面の数が多いワンポールテントを選びましょう。（四角形より六角形、さらに八角形）
+          また、ワンポールテントの形状にもよりますが、天敵と呼べる「風」に強いのも大きな特徴です。より風に強いテントを選ぶ際は、面の数が多いワンポールテントを選びましょう。（四角形より六角形、さらに八角形）
           <br />
           <br />
           ワンポールテントは、インナーテントや煙突、スカート付きなど、きせつに応じてアレンジできる点も大きなメリットのひとつです。
@@ -61,10 +59,14 @@ const OnepollCheap3over: FC = memo(() => {
           </ul>
           など、安いテントには安いなりの理由があります。
           <br />
+          <br />
           とりあえず試しに1回行ってみたいという方にはおすすめですが、キャンプを趣味にしたいと考えている方にはおすすめできません。
           <br />
           <br />
-          本気で趣味にしたいと思っている方は、最低でも1万円以上のテントを購入するようにしましょう。
+          <StyleTextRed>
+            本気で趣味にしたいと思っている方は、最低でも1万円以上のテントを購入
+          </StyleTextRed>
+          するようにしましょう。
         </>
       }
       affilierData={onepollCheap3overData}
