@@ -11,9 +11,7 @@ const OnepollDome3over: FC = memo(() => {
       image="./images/tent-illustration/onepoll.webp"
       tentComment={
         <>
-          冬のグループキャンプは、寒さ対策として
-          <br />
-          スカート付きのワンポールテントがおすすめです。
+          冬のグループキャンプは寒さ対策としてスカート付きのワンポールテントがおすすめです。
         </>
       }
       features={

@@ -197,7 +197,8 @@ const mainTitle = css`
   }
 `;
 const comment = css`
-  width: 321px;
+  max-width: 321px;
+  width: fit-content;
   background-color: #fff;
   font-size: 16px;
   font-weight: bold;
@@ -207,7 +208,7 @@ const comment = css`
     width: auto;
   }
   ${media600} {
-    width: fit-content;
+    max-width: 280px;
     font-size: 16px;
     line-height: calc(25 / 16);
     margin-right: auto;

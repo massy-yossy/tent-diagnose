@@ -11,9 +11,7 @@ const DomeDurable: FC = memo(() => {
       image="./images/tent-illustration/dome.webp"
       tentComment={
         <>
-          ソロキャンプで耐久性のあるテントを求めるなら、
-          <br />
-          ドームテントがおすすめです。
+          ソロキャンプで耐久性のあるテントを求めるなら、ドームテントがおすすめです。
         </>
       }
       features={

@@ -10,9 +10,7 @@ const DomeStylish: FC = memo(() => {
       image="./images/tent-illustration/dome.webp"
       tentComment={
         <>
-          機能性よりもデザイン性を求めるなら、
-          <br />
-          おしゃれなドームテントがおすすめです。
+          機能性よりもデザイン性を求めるならお洒落なドームテントがおすすめです。
         </>
       }
       features={

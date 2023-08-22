@@ -13,9 +13,7 @@ const OnepollShelter: FC = memo(() => {
       image="./images/tent-illustration/onepoll.webp"
       tentComment={
         <>
-          夏のソロキャンプは、
-          <br />
-          ワンポールテントのシェルタータイプがおすすめです。
+          夏のソロキャンプはワンポールテントのシェルタータイプがおすすめです。
         </>
       }
       features={

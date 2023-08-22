@@ -11,9 +11,7 @@ const TunnelFamily: FC = memo(() => {
       image="./images/tent-illustration/tunnel.webp"
       tentComment={
         <>
-          ファミリーキャンプには大型で使いやすい
-          <br />
-          トンネルテントがおすすめです。
+          ファミリーキャンプには大型で使いやすいトンネルテントがおすすめです。
         </>
       }
       features={

@@ -12,9 +12,7 @@ const OnepollCheap: FC = memo(() => {
         image="./images/tent-illustration/onepoll.webp"
         tentComment={
           <>
-            キャンプ初心者でも手を出しやすい、
-            <br />
-            安いワンポールテントがおすすめです。
+            キャンプ初心者でも手を出しやすい安いワンポールテントがおすすめです。
           </>
         }
         features={
