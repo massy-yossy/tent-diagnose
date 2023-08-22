@@ -10,9 +10,7 @@ const OnepollDome: FC = memo(() => {
       image="./images/tent-illustration/onepoll.webp"
       tentComment={
         <>
-          冬のソロキャンプは、寒さ対策として
-          <br />
-          スカート付きのワンポールテントがおすすめです。
+          冬のソロキャンプは寒さ対策としてスカート付きのワンポールテントがおすすめです。
         </>
       }
       features={

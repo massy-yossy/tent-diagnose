@@ -12,9 +12,7 @@ const OnepollShelter3over: FC = memo(() => {
       image="./images/tent-illustration/onepoll.webp"
       tentComment={
         <>
-          夏のグループキャンプは、
-          <br />
-          ワンポールテントのシェルタータイプがおすすめです。
+          夏のグループキャンプはワンポールテントのシェルタータイプがおすすめです。
         </>
       }
       features={

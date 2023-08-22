@@ -11,9 +11,7 @@ const TworoomGood3over: FC = memo(() => {
       image="./images/tent-illustration/tworoom.webp"
       tentComment={
         <>
-          グループキャンプは広々使える
-          <br />
-          ツールームテントがおすすめです。
+          グループキャンプは広々使えるツールームテントがおすすめです。
         </>
       }
       features={

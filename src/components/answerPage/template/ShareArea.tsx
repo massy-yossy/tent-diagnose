@@ -10,7 +10,7 @@ const ShareArea: FC = memo(() => {
         <p css={text}>
           最後までご愛読ありがとうございました。
           <br />
-          mypaceoutdoorは、キャンプ・サーフィンの『初めて』を支援するため、初心者の方に役立つ情報を配信し続けてまいります。
+          mypace outdoorは、キャンプ・サーフィンの『初めて』を支援するため、初心者の方に役立つ情報を配信し続けてまいります。
         </p>
         <ShareButtons />
         <TopToButton />
