@@ -8,5 +8,4 @@ export default defineConfig({
       jsxImportSource: "@emotion/react",
     }),
   ],
-  base: "/tent-shindan/",
 });
